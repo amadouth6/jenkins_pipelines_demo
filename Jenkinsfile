@@ -1,3 +1,5 @@
+pipeline {
+ agent any
  stage('Test') {
     parallel {
       stage('Test On Windows') {
@@ -11,4 +13,5 @@
         }
       }
     }
-  }
+ }
+}
